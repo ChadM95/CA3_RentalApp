@@ -1,0 +1,15 @@
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\CA3_RentalApp.exe.config
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\CA3_RentalApp.exe
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\CA3_RentalApp.pdb
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.csproj.AssemblyReference.cache
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\MainWindow.g.cs
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\App.g.cs
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp_MarkupCompile.cache
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp_MarkupCompile.lref
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\MainWindow.baml
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.g.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Properties.Resources.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.csproj.GenerateResource.cache
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.csproj.CoreCompileInputs.cache
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.exe
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.pdb

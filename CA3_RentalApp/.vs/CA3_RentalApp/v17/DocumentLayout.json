@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,8 +46,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T12:56:19.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T12:56:19.214Z"
             }
           ]
         }

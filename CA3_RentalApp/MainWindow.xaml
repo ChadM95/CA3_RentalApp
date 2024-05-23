@@ -6,7 +6,90 @@
         xmlns:local="clr-namespace:CA3_RentalApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+<Grid>
+    <TabControl TabStripPlacement="Top">
         
+        <!--Main Tab-->
+        <TabItem Header="Main" Width="50">
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="70*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!--1st Column-->
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="42*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!--top row-->
+                    <Label Content="Surfboard Type" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
+                    <ComboBox Width="110" Height="20" Margin="10" HorizontalAlignment="Right"/>
+                    <!--2nd row-->
+                    <Label Grid.Row="1" Content="Start Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
+                    <DatePicker Grid.Row="1" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <!--3rd row-->
+                    <Label Grid.Row="2" Content="End Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
+                    <DatePicker Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <!--4th row-->
+                    <Button Content="Search" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <!--5th row-->
+                    <Label Grid.Row="4" Content="Available Surfboards" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    <!--6th row-->
+                    <ListBox Grid.Row="5" Margin="5"/>
+                </Grid>
+                
+                <!--2nd Column-->
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="45*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="15*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!--Top row-->
+                    <TextBlock Text="Rad Chad's Surfboard Rental" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <!--2nd row-->
+                    <Image Source="" Grid.Row="1"/>
+                    <!--3rd row-->
+                    <TextBlock Grid.Row="2"/>
+                    <!--4th row-->
+                    <Button Grid.Row="3"/>
+                </Grid>
+                        
+            </Grid>
+                    
+        </TabItem>
+
+        <!--Surfboards Tab-->
+        <TabItem Header="Surfboards" Width="80">
+            <Grid>
+                <DataGrid Margin="10"/>
+            </Grid>
+        </TabItem>
+
+        <!--Bookings Tab-->
+        <TabItem Header="Bookings" Width="60">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="20*"/>
+                </Grid.RowDefinitions>
+                
+                <DataGrid Margin="10"/>
+                <Button Grid.Row="1" Content="Delete" Width="60" Height="25" Margin="15" HorizontalAlignment="Right"/>
+
+            </Grid>
+        </TabItem>
+    
+        </TabControl>
     </Grid>
 </Window>
