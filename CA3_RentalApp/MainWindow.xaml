@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CA3_RentalApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Loaded="Window_Loaded" Height="450" Width="800">
 <Grid>
     <TabControl TabStripPlacement="Top">
         
@@ -31,19 +31,19 @@
                     
                     <!--top row-->
                     <Label Content="Surfboard Type" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
-                    <ComboBox Width="110" Height="20" Margin="10" HorizontalAlignment="Right"/>
+                    <ComboBox Name="cbx1"  Width="110" Height="20" Margin="10" HorizontalAlignment="Right"/>
                     <!--2nd row-->
                     <Label Grid.Row="1" Content="Start Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
-                    <DatePicker Grid.Row="1" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <DatePicker Name="StartDatePicker" Grid.Row="1" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--3rd row-->
                     <Label Grid.Row="2" Content="End Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
-                    <DatePicker Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                        <DatePicker Name="EndDatePicker" Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--4th row-->
-                    <Button Content="Search" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <Button Content="Search" Click="Button_Click" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--5th row-->
                     <Label Grid.Row="4" Content="Available Surfboards" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                     <!--6th row-->
-                    <ListBox Grid.Row="5" Margin="5"/>
+                    <ListBox Name="lbx1" Grid.Row="5" Margin="5"/>
                 </Grid>
                 
                 <!--2nd Column-->
@@ -58,7 +58,7 @@
                     <!--Top row-->
                     <TextBlock Text="Rad Chad's Surfboard Rental" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     <!--2nd row-->
-                    <Image Source="Content/fish.png" Grid.Row="1"/>
+                    <Image Name="img1" Grid.Row="1"/>
                     <!--3rd row-->
                     <TextBlock Grid.Row="2"/>
                     <!--4th row-->
@@ -72,7 +72,7 @@
         <!--Surfboards Tab-->
         <TabItem Header="Surfboards" Width="80">
             <Grid>
-                <DataGrid Margin="10"/>
+                <DataGrid Name="dgSurfboards" Margin="10"/>
             </Grid>
         </TabItem>
 
@@ -83,8 +83,8 @@
                     <RowDefinition Height="80*"/>
                     <RowDefinition Height="20*"/>
                 </Grid.RowDefinitions>
-                
-                <DataGrid Margin="10"/>
+
+                <DataGrid Name="dgBookings" Margin="10"/>
                 <Button Grid.Row="1" Content="Delete" Width="60" Height="25" Margin="15" HorizontalAlignment="Right"/>
 
             </Grid>

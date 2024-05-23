@@ -8,11 +8,17 @@ using System.Data.Entity;
 
 namespace CA3_RentalApp
 {
-    internal class Booking
+    public class Booking
     {
+        //core properties
         public int BookingId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
+        //foreign key relationship
+        public int SurfboardId { get; set; }
+
+        //navigation reference to access Surfboard 
+        public virtual Surfboard Surfboard { get; set; }
     }
 }

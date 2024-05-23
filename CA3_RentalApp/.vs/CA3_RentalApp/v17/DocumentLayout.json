@@ -3,19 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9659F9FB-6421-4B35-B000-7428AF04D08C}|..\\DataManagement\\DataManagement.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\datamanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\rentalbookingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:rentalbookingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,50 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\DataManagement\\Program.cs",
-              "RelativeDocumentMoniker": "..\\DataManagement\\Program.cs",
-              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\DataManagement\\Program.cs",
-              "RelativeToolTip": "..\\DataManagement\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:03:00.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RentalBookingData.cs",
-              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\RentalBookingData.cs",
-              "RelativeDocumentMoniker": "RentalBookingData.cs",
-              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\RentalBookingData.cs",
-              "RelativeToolTip": "RentalBookingData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:57:30.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Booking.cs",
-              "RelativeDocumentMoniker": "Booking.cs",
-              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Booking.cs",
-              "RelativeToolTip": "Booking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:50:56.033Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -78,9 +40,46 @@
               "RelativeDocumentMoniker": "Surfboard.cs",
               "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Surfboard.cs",
               "RelativeToolTip": "Surfboard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvwsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T15:50:31.104Z",
+              "WhenOpened": "2024-05-23T20:56:36.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Booking.cs",
+              "RelativeDocumentMoniker": "Booking.cs",
+              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Booking.cs",
+              "RelativeToolTip": "Booking.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:56:35.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAwEAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:25:19.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-23T20:25:15.042Z",
               "EditorCaption": ""
             }
           ]

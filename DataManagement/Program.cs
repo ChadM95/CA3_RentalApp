@@ -12,6 +12,27 @@ namespace DataManagement
     {
         static void Main(string[] args)
         {
+            //create database reference
+            RentalBookingData db = new RentalBookingData();
+
+            using (db)
+            {
+                //create new objects
+                Surfboard s1 = new Surfboard { Type = "Shortboard" };
+                Surfboard s2 = new Surfboard { Type = "Longboard" };
+                Surfboard s3 = new Surfboard { Type = "Bodyboard" };
+
+                //add to database
+                db.Surfboards.Add(s1);
+                db.Surfboards.Add(s2);
+                db.Surfboards.Add(s3);
+
+                //save changes
+                db.SaveChanges();
+            }
+
+            Console.WriteLine("did it work?");
+            Console.ReadLine();
         }
     }
 }

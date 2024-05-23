@@ -13,3 +13,11 @@ C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\ob
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.csproj.CoreCompileInputs.cache
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.exe
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.pdb
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\EntityFramework.dll
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\EntityFramework.xml
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_Rent.397F8ED8.Up2Date
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.InitialCreate.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.rework.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.reworkAgain.resources

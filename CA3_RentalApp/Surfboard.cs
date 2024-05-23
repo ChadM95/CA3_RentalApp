@@ -7,12 +7,21 @@ using System.Data.Entity;
 
 namespace CA3_RentalApp
 {
-    internal class Surfboard
+    public class Surfboard
     {
+        //properties
         public int SurfboardId { get; set; }
         public string Type { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public int BookingCount { get; set; }
+        
+        //collection of bookings
+        public ICollection<Booking> Bookings { get; set; }
+
+        //override ToString method
+        public override string ToString()
+        {
+            return string.Format("{0}",Type);
+        }
 
     }
 }
