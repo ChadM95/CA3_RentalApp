@@ -58,11 +58,11 @@
                     <!--Top row-->
                     <TextBlock Text="Rad Chad's Surfboard Rental" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     <!--2nd row-->
-                    <Image Source="" Grid.Row="1"/>
+                    <Image Source="Content/fish.png" Grid.Row="1"/>
                     <!--3rd row-->
                     <TextBlock Grid.Row="2"/>
                     <!--4th row-->
-                    <Button Grid.Row="3"/>
+                    <Button Content="Book" Grid.Row="3" Height="25" Width="60"/>
                 </Grid>
                         
             </Grid>
