@@ -74,7 +74,7 @@ namespace CA3_RentalApp
                 MessageBox.Show("Please enter a value for each option");    
         }
 
-            private void lbx1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void lbx1_SelectionChanged(object sender, SelectionChangedEventArgs e)
             {
                 //determine what was selected
                 var selectedItem = lbx1.SelectedItem as Surfboard;
@@ -82,7 +82,8 @@ namespace CA3_RentalApp
                 DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
 
                 //display text information
-                tblk1.Text = string.Format("<b>Selected Item</b>\nType: {0}\nStart Date: {1}\nEnd Date: {2}",
+                tblkHeading.Text = "Selected Item";
+                tblkBody.Text = string.Format("Type: {0}\nStart Date: {1}\nEnd Date: {2}",
                             selectedItem.Type.ToString(), startDate.ToShortDateString(), endDate.ToShortDateString());
 
                 //display picture
@@ -101,7 +102,42 @@ namespace CA3_RentalApp
 
             //make book button visible
             btnBook.Visibility = Visibility.Visible;
+
             }
 
+        //updates the displayed date if changed while an item is displayed
+        private void StartDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbx1.SelectedItem != null)
+            {
+                //determine what is selected
+                var selectedItem = lbx1.SelectedItem as Surfboard;
+                DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
+                DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
+
+                //update text information
+                tblkHeading.Text = "Selected Item";
+                tblkBody.Text = string.Format("Type: {0}\nStart Date: {1}\nEnd Date: {2}",
+                            selectedItem.Type.ToString(), startDate.ToShortDateString(), endDate.ToShortDateString());
+
+            }
         }
+
+        private void EndDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbx1.SelectedItem != null)
+            {
+                //determine what is selected
+                var selectedItem = lbx1.SelectedItem as Surfboard;
+                DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
+                DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
+
+                //update text information
+                tblkHeading.Text = "Selected Item";
+                tblkBody.Text = string.Format("Type: {0}\nStart Date: {1}\nEnd Date: {2}",
+                            selectedItem.Type.ToString(), startDate.ToShortDateString(), endDate.ToShortDateString());
+
+            }
+        }
+    }
     }

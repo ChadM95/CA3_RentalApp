@@ -34,10 +34,10 @@
                     <ComboBox Name="cbx1"  Width="110" Height="20" Margin="10" HorizontalAlignment="Right"/>
                     <!--2nd row-->
                     <Label Grid.Row="1" Content="Start Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
-                    <DatePicker Name="StartDatePicker" Grid.Row="1" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <DatePicker Name="StartDatePicker" SelectedDateChanged="StartDatePicker_SelectedDateChanged" Grid.Row="1" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--3rd row-->
                     <Label Grid.Row="2" Content="End Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
-                        <DatePicker Name="EndDatePicker" Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <DatePicker Name="EndDatePicker" SelectedDateChanged="EndDatePicker_SelectedDateChanged" Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--4th row-->
                     <Button Name="btnSearch" Content="Search" Click="btnSearch_Click" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--5th row-->
@@ -50,9 +50,10 @@
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="10*"/>
-                        <RowDefinition Height="45*"/>
-                        <RowDefinition Height="30*"/>
-                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="10*"/>
                     </Grid.RowDefinitions>
                     
                     <!--Top row-->
@@ -60,9 +61,11 @@
                     <!--2nd row-->
                     <Image Name="img1" Source="" Grid.Row="1"/>
                     <!--3rd row-->
-                    <TextBlock Name="tblk1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+                    <TextBlock Name="tblkHeading" Text="" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" FontWeight="Bold"/>
                     <!--4th row-->
-                    <Button Name="btnBook" Visibility="Hidden" Content="Book" Grid.Row="3" Height="25" Width="60"/>
+                    <TextBlock Name="tblkBody" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3"/>
+                    <!--5th row-->
+                    <Button Name="btnBook" Visibility="Hidden" Content="Book" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="4" Height="25" Width="60"/>
                 </Grid>
                         
             </Grid>
