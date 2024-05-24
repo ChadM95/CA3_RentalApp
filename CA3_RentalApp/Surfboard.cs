@@ -12,7 +12,6 @@ namespace CA3_RentalApp
         //properties
         public int SurfboardId { get; set; }
         public string Type { get; set; }
-        public int BookingCount { get; set; }
         
         //collection of bookings
         public ICollection<Booking> Bookings { get; set; }

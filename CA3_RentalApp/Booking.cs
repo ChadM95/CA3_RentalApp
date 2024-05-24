@@ -17,8 +17,9 @@ namespace CA3_RentalApp
 
         //foreign key relationship
         public int SurfboardId { get; set; }
+        
 
         //navigation reference to access Surfboard 
-        public string Surfboard { get; set; }
+        public virtual Surfboard SurfboardType { get; set; }
     }
 }
