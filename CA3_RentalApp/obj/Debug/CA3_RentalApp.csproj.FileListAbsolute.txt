@@ -21,3 +21,5 @@ C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\ob
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.InitialCreate.resources
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.rework.resources
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.reworkAgain.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.moreChanges.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.moreChangesAgain.resources

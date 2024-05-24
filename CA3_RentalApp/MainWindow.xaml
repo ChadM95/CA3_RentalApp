@@ -59,13 +59,13 @@
                     <!--Top row-->
                     <TextBlock Text="Rad Chad's Surfboard Rental" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     <!--2nd row-->
-                    <Image Name="img1" Source="" Grid.Row="1"/>
+                    <Image Name="img1" Grid.Row="1"/>
                     <!--3rd row-->
                     <TextBlock Name="tblkHeading" Text="" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" FontWeight="Bold"/>
                     <!--4th row-->
                     <TextBlock Name="tblkBody" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3"/>
                     <!--5th row-->
-                    <Button Name="btnBook" Visibility="Hidden" Content="Book" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="4" Height="25" Width="60"/>
+                    <Button Name="btnBook" Click="btnBook_Click" Visibility="Hidden" Content="Book" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="4" Height="25" Width="60"/>
                 </Grid>
                         
             </Grid>

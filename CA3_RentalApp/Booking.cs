@@ -19,6 +19,6 @@ namespace CA3_RentalApp
         public int SurfboardId { get; set; }
 
         //navigation reference to access Surfboard 
-        public virtual Surfboard Surfboard { get; set; }
+        public string Surfboard { get; set; }
     }
 }

@@ -25,24 +25,27 @@ namespace CA3_RentalApp
             InitializeComponent();
         }
 
+        //window loaded event populates datagrids and ComboBox
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //database reference
+            //create database reference
             RentalBookingData db = new RentalBookingData();
 
-            //get all records from Surfboards table
-            var query = db.Surfboards.ToList();
+            //get all records from Surfboards table + update datagrid
+            dgSurfboards.ItemsSource = db.Surfboards.ToList();
 
-            //update surfboards datagrid to show all items
-            dgSurfboards.ItemsSource = query;
+            //get all records from Bookings table + update datagrid
+            dgBookings.ItemsSource = db.Bookings.ToList();
 
             //set combobox items and default selection
             cbx1.ItemsSource = new string[] { "All", "Shortboard", "Longboard", "Bodyboard" };
             cbx1.SelectedItem = "All";
         }
 
+        //searches database for available items based on search criteria
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            //check for nulls
             if (StartDatePicker.SelectedDate != null && EndDatePicker.SelectedDate != null)
             {
                 //determine what was selected
@@ -69,11 +72,13 @@ namespace CA3_RentalApp
                         .ToList();
                     }
             }
+
             //control if a value is not entered
             else
                 MessageBox.Show("Please enter a value for each option");    
         }
 
+        //displays selected item information
         private void lbx1_SelectionChanged(object sender, SelectionChangedEventArgs e)
             {
                 //determine what was selected
@@ -86,7 +91,7 @@ namespace CA3_RentalApp
                 tblkBody.Text = string.Format("Type: {0}\nStart Date: {1}\nEnd Date: {2}",
                             selectedItem.Type.ToString(), startDate.ToShortDateString(), endDate.ToShortDateString());
 
-                //display picture
+                //display picture for item
                 switch (selectedItem.Type)
                 {
                     case "Shortboard":
@@ -105,7 +110,7 @@ namespace CA3_RentalApp
 
             }
 
-        //updates the displayed date if changed while an item is displayed
+        //updates the displayed start date if changed while an item is displayed
         private void StartDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbx1.SelectedItem != null)
@@ -122,7 +127,8 @@ namespace CA3_RentalApp
 
             }
         }
-
+        
+        //updates the displayed end date if changed while an item is displayed
         private void EndDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbx1.SelectedItem != null)
@@ -139,5 +145,49 @@ namespace CA3_RentalApp
 
             }
         }
+
+        //adds a new booking to the database
+        private void btnBook_Click(object sender, RoutedEventArgs e)
+        {
+            //determine selected fields
+            string typeSelected = cbx1.SelectedValue.ToString();
+            DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
+            DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
+
+            //create database reference
+            RentalBookingData db = new RentalBookingData();
+
+            //if statement starts here
+
+                //create new object // dates, surfboard type, surfboard id
+                Booking b1 = new Booking
+                {
+                    StartDate = startDate,
+                    EndDate = endDate,
+                    SurfboardId = db.Surfboards.Where(s => s.Type == typeSelected)
+                                                .Select(s => s.SurfboardId)
+                                                .FirstOrDefault(),
+                    Surfboard = db.Surfboards.Where(s => s.Type == typeSelected)
+                                                .Select(s => s.Type)
+                                                .FirstOrDefault()
+                };
+
+                //add object to db
+                db.Bookings.Add(b1);
+                db.SaveChanges();
+
+                //increment bookingcount property of selected surfboard
+                var surfboard = db.Surfboards.FirstOrDefault(s => s.SurfboardId == b1.SurfboardId);
+                surfboard.BookingCount++;
+
+                //refresh bookings datagrid
+                dgBookings.ItemsSource = db.Bookings.ToList();
+
+                //display message
+                MessageBox.Show("Booking Successful");
+
+            //else
+            //MessageBox.Show("Cannot book this item for the selected dates");
+        }
     }
-    }
+}

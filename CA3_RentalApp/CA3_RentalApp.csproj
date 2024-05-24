@@ -78,6 +78,14 @@
     <Compile Include="Migrations\202405232109576_reworkAgain.Designer.cs">
       <DependentUpon>202405232109576_reworkAgain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405241445583_moreChanges.cs" />
+    <Compile Include="Migrations\202405241445583_moreChanges.Designer.cs">
+      <DependentUpon>202405241445583_moreChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405241526272_moreChangesAgain.cs" />
+    <Compile Include="Migrations\202405241526272_moreChangesAgain.Designer.cs">
+      <DependentUpon>202405241526272_moreChangesAgain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RentalBookingData.cs" />
     <Compile Include="Surfboard.cs" />
@@ -116,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405232109576_reworkAgain.resx">
       <DependentUpon>202405232109576_reworkAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405241445583_moreChanges.resx">
+      <DependentUpon>202405241445583_moreChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405241526272_moreChangesAgain.resx">
+      <DependentUpon>202405241526272_moreChangesAgain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
