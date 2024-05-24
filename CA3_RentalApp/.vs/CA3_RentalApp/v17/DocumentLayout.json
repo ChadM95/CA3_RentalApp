@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Surfboard.cs",
               "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Surfboard.cs",
               "RelativeDocumentMoniker": "Surfboard.cs",
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Surfboard.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvwsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T20:56:36.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T20:56:36.118Z"
             },
             {
               "$type": "Document",
@@ -65,14 +64,14 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAwEAAAAAZAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAtwGYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T20:25:19.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",

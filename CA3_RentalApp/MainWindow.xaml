@@ -39,11 +39,11 @@
                     <Label Grid.Row="2" Content="End Date" FontSize="12" Margin="12" HorizontalAlignment="Left"/>
                         <DatePicker Name="EndDatePicker" Grid.Row="2" Width="110" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--4th row-->
-                    <Button Content="Search" Click="Button_Click" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
+                    <Button Name="btnSearch" Content="Search" Click="btnSearch_Click" Grid.Row="3" Width="60" Height="25" Margin="10" HorizontalAlignment="Right"/>
                     <!--5th row-->
                     <Label Grid.Row="4" Content="Available Surfboards" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                     <!--6th row-->
-                    <ListBox Name="lbx1" Grid.Row="5" Margin="5"/>
+                    <ListBox Name="lbx1" SelectionChanged="lbx1_SelectionChanged" Grid.Row="5" Margin="5"/>
                 </Grid>
                 
                 <!--2nd Column-->
@@ -58,11 +58,11 @@
                     <!--Top row-->
                     <TextBlock Text="Rad Chad's Surfboard Rental" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     <!--2nd row-->
-                    <Image Name="img1" Grid.Row="1"/>
+                    <Image Name="img1" Source="" Grid.Row="1"/>
                     <!--3rd row-->
-                    <TextBlock Grid.Row="2"/>
+                    <TextBlock Name="tblk1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
                     <!--4th row-->
-                    <Button Content="Book" Grid.Row="3" Height="25" Width="60"/>
+                    <Button Name="btnBook" Visibility="Hidden" Content="Book" Grid.Row="3" Height="25" Width="60"/>
                 </Grid>
                         
             </Grid>
