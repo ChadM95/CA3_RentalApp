@@ -74,9 +74,9 @@
 
         <!--Surfboards Tab-->
         <TabItem Header="Surfboards" Width="80">
-            <Grid>
-                <DataGrid Name="dgSurfboards" Margin="10"/>
-            </Grid>
+                <Grid>
+                    <DataGrid Name="dgSurfboards" Margin="10"/>
+                </Grid>
         </TabItem>
 
         <!--Bookings Tab-->

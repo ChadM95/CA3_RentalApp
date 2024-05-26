@@ -102,6 +102,10 @@
     <Compile Include="Migrations\202405261916232_BookingCount.Designer.cs">
       <DependentUpon>202405261916232_BookingCount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405261930595_virtual.cs" />
+    <Compile Include="Migrations\202405261930595_virtual.Designer.cs">
+      <DependentUpon>202405261930595_virtual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RentalBookingData.cs" />
     <Compile Include="Surfboard.cs" />
@@ -158,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405261916232_BookingCount.resx">
       <DependentUpon>202405261916232_BookingCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405261930595_virtual.resx">
+      <DependentUpon>202405261930595_virtual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

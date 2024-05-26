@@ -14,7 +14,7 @@ namespace CA3_RentalApp
         public string Type { get; set; }
 
         //collection of bookings
-        public List<Booking> Bookings { get; set; }
+        public virtual List<Booking> Bookings { get; set; }
 
         //gives int value of Bookings.Count 
         public int BookingCount

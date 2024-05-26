@@ -161,8 +161,8 @@ namespace CA3_RentalApp
             //create database reference
             RentalBookingData db = new RentalBookingData();
 
-            //create a boolean which expresses whether there are any clashing
-            //booking dates for the selected item
+            //create a boolean which expresses whether there are 
+            //any clashing dates for the selected item
             bool isClashing = db.Surfboards.Where(s => s.Type == typeSelected)
                               .Any(s => s.Bookings.Any(b => b.StartDate < endDate && b.EndDate > startDate));
 
@@ -182,8 +182,9 @@ namespace CA3_RentalApp
                 db.Bookings.Add(b1);
                 db.SaveChanges();
 
-                //refresh bookings datagrid
+                //refresh datagrids
                 dgBookings.ItemsSource = db.Bookings.ToList();
+                dgSurfboards.ItemsSource = db.Surfboards.ToList();
 
                 //display message
                 MessageBox.Show("Booking Successful");
