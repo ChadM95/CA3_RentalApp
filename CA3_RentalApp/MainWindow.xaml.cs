@@ -193,5 +193,34 @@ namespace CA3_RentalApp
             else
             MessageBox.Show("Cannot book this item for the selected dates");
         }
+
+        //deletes a selected booking
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            //create db reference
+            RentalBookingData db = new RentalBookingData();
+
+            //determine selected booking item
+            var selectedBooking = (Booking)dgBookings.SelectedItem;
+
+            if (selectedBooking != null)
+            {
+                var bookingToDelete = db.Bookings.FirstOrDefault(b => b.BookingId == selectedBooking.BookingId);
+                
+                if (bookingToDelete != null)
+                {
+                    //delete the booking from database
+                    db.Bookings.Remove(bookingToDelete);
+                    db.SaveChanges();
+
+                    //show message
+                    MessageBox.Show("Booking Deleted!");
+
+                    //refresh datagrids
+                    dgBookings.ItemsSource = db.Bookings.ToList();
+                    dgSurfboards.ItemsSource = db.Surfboards.ToList();
+                }
+            }
+        }
     }
 }

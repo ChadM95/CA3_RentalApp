@@ -88,7 +88,7 @@
                 </Grid.RowDefinitions>
 
                 <DataGrid Name="dgBookings" Margin="10"/>
-                <Button Grid.Row="1" Content="Delete" Width="60" Height="25" Margin="15" HorizontalAlignment="Right"/>
+                <Button Name="btnDelete" Click="btnDelete_Click" Grid.Row="1" Content="Delete" Width="60" Height="25" Margin="15" HorizontalAlignment="Right"/>
 
             </Grid>
         </TabItem>
