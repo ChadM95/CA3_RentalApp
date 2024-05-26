@@ -87,6 +87,8 @@ namespace CA3_RentalApp
                 DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
                 DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
 
+            if (selectedItem != null)
+            {
                 //display text information
                 tblkHeading.Text = "Selected Item";
                 tblkBody.Text = string.Format("Type: {0}\nStart Date: {1}\nEnd Date: {2}",
@@ -106,10 +108,10 @@ namespace CA3_RentalApp
                         break;
                 }
 
-            //make book button visible
-            btnBook.Visibility = Visibility.Visible;
-
+                //make book button visible
+                btnBook.Visibility = Visibility.Visible;
             }
+        }
 
         //updates the displayed start date if changed while an item is displayed
         private void StartDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)

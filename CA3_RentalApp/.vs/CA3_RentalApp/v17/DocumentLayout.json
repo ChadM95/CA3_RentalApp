@@ -3,11 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9659F9FB-6421-4B35-B000-7428AF04D08C}|..\\DataManagement\\DataManagement.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\datamanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:surfboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|c:\\users\\auser\\documents\\chad\\repos\\ca3_rentalapp\\ca3_rentalapp\\ca3_rentalapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70781BC4-9623-4759-83EE-0BD0E63CA4B0}|CA3_RentalApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,27 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\DataManagement\\Program.cs",
-              "RelativeDocumentMoniker": "..\\DataManagement\\Program.cs",
-              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\DataManagement\\Program.cs",
-              "RelativeToolTip": "..\\DataManagement\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAowBMAAAASAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAG8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T15:30:46.318Z",
+              "WhenOpened": "2024-05-26T18:26:07.565Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Surfboard.cs",
-              "DocumentMoniker": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Surfboard.cs",
-              "RelativeDocumentMoniker": "Surfboard.cs",
-              "ToolTip": "C:\\Users\\auser\\Documents\\Chad\\Repos\\CA3_RentalApp\\CA3_RentalApp\\CA3_RentalApp\\Surfboard.cs",
-              "RelativeToolTip": "Surfboard.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAmwA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T20:56:36.118Z"
             }
           ]
         }
