@@ -17,7 +17,7 @@ namespace DataManagement
 
             using (db)
             {
-                //delete all bookings
+                ////delete all bookings
                 //var allBookings = db.Bookings.ToList();
                 //db.Bookings.RemoveRange(allBookings);
 
@@ -32,11 +32,12 @@ namespace DataManagement
                 //db.Surfboards.Add(s2);
                 //db.Surfboards.Add(s3);
 
-                ////save changes
+                //save changes
                 db.SaveChanges();
             }
 
             Console.WriteLine("Finished!");
+           
             Console.ReadLine();
         }
     }
