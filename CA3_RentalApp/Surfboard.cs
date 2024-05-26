@@ -12,9 +12,21 @@ namespace CA3_RentalApp
         //properties
         public int SurfboardId { get; set; }
         public string Type { get; set; }
-        
+
         //collection of bookings
-        public ICollection<Booking> Bookings { get; set; }
+        public List<Booking> Bookings { get; set; }
+
+        //gives int value of Bookings.Count 
+        public int BookingCount
+        {
+            get { return Bookings.Count; }    
+        }
+
+        //contructor to initialise bookings collection
+        public Surfboard()
+        {
+            Bookings = new List<Booking>();
+        }
 
         //override ToString method
         public override string ToString()

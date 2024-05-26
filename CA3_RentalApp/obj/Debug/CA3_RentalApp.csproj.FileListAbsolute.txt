@@ -25,3 +25,5 @@ C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\ob
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.moreChangesAgain.resources
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.Haventaclue.resources
 C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.DeletedBookingCount.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.BookingList.resources
+C:\Users\auser\Documents\Chad\Repos\CA3_RentalApp\CA3_RentalApp\CA3_RentalApp\obj\Debug\CA3_RentalApp.Migrations.BookingCount.resources

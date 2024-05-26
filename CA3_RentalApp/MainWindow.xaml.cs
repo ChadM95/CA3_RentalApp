@@ -69,7 +69,8 @@ namespace CA3_RentalApp
                     else
                     {
                         lbx1.ItemsSource = db.Surfboards.Where
-                        (s => s.Bookings.All(b => b.StartDate >= endDate || b.EndDate <= startDate) && s.Type == typeSelected)
+                        (s => s.Bookings.All(b => b.StartDate >= endDate || b.EndDate <= startDate) 
+                         && s.Type == typeSelected)
                         .ToList();
                     }
             }
@@ -152,7 +153,7 @@ namespace CA3_RentalApp
         //adds a new booking to the database
         private void btnBook_Click(object sender, RoutedEventArgs e)
         {
-            //determine selected fields
+            //determine selected fields    
             string typeSelected = lbx1.SelectedValue.ToString();
             DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
             DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
@@ -160,8 +161,13 @@ namespace CA3_RentalApp
             //create database reference
             RentalBookingData db = new RentalBookingData();
 
-            //if statement starts here
+            //create a boolean which expresses whether there are any clashing
+            //booking dates for the selected item
+            bool isClashing = db.Surfboards.Where(s => s.Type == typeSelected)
+                              .Any(s => s.Bookings.Any(b => b.StartDate < endDate && b.EndDate > startDate));
 
+            if (!isClashing)
+            { 
                 //create new object // dates, surfboard type, surfboard id
                 Booking b1 = new Booking
                 {
@@ -170,35 +176,21 @@ namespace CA3_RentalApp
                     SurfboardId = db.Surfboards.Where(s => s.Type == typeSelected)
                                                 .Select(s => s.SurfboardId)
                                                 .FirstOrDefault(),
-                    //Surfboard = db.Surfboards.Where(s => s.Type == typeSelected)
-                    //                            .Select(s => s.Type)
-                    //                            .FirstOrDefault()
                 };
 
                 //add object to db
                 db.Bookings.Add(b1);
                 db.SaveChanges();
 
-            //add booking the surfboards bookings collection
-            var surfboard = db.Surfboards.Include(s => s.Bookings).FirstOrDefault(s => s.SurfboardId == b1.SurfboardId);
+                //refresh bookings datagrid
+                dgBookings.ItemsSource = db.Bookings.ToList();
 
-            if (surfboard != null)
-            {
-                surfboard.Bookings.Add(b1); // Add the booking to the Surfboard's Bookings collection
-
-                // Save changes to the database
-                db.SaveChanges();
+                //display message
+                MessageBox.Show("Booking Successful");
             }
-        
 
-            //refresh bookings datagrid
-            dgBookings.ItemsSource = db.Bookings.ToList();
-
-            //display message
-            MessageBox.Show("Booking Successful");
-
-            //else
-            //MessageBox.Show("Cannot book this item for the selected dates");
+            else
+            MessageBox.Show("Cannot book this item for the selected dates");
         }
     }
 }

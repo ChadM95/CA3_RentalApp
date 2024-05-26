@@ -94,6 +94,14 @@
     <Compile Include="Migrations\202405241600167_DeletedBookingCount.Designer.cs">
       <DependentUpon>202405241600167_DeletedBookingCount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405261908243_BookingList.cs" />
+    <Compile Include="Migrations\202405261908243_BookingList.Designer.cs">
+      <DependentUpon>202405261908243_BookingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405261916232_BookingCount.cs" />
+    <Compile Include="Migrations\202405261916232_BookingCount.Designer.cs">
+      <DependentUpon>202405261916232_BookingCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RentalBookingData.cs" />
     <Compile Include="Surfboard.cs" />
@@ -144,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405241600167_DeletedBookingCount.resx">
       <DependentUpon>202405241600167_DeletedBookingCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405261908243_BookingList.resx">
+      <DependentUpon>202405261908243_BookingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405261916232_BookingCount.resx">
+      <DependentUpon>202405261916232_BookingCount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
