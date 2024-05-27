@@ -49,30 +49,27 @@ namespace CA3_RentalApp
             //check for nulls
             if (StartDatePicker.SelectedDate != null && EndDatePicker.SelectedDate != null)
             {
+                //database connection
+                RentalBookingData db = new RentalBookingData();
+
                 //determine what was selected
                 string typeSelected = cbx1.SelectedValue.ToString();
                 DateTime startDate = (DateTime)StartDatePicker.SelectedDate;
                 DateTime endDate = (DateTime)EndDatePicker.SelectedDate;
 
-                
-                    //database connection
-                    RentalBookingData db = new RentalBookingData();
+                //query database and display available items based on search criteria
+                if (typeSelected == "All")
+                {
+                    lbx1.ItemsSource = db.Surfboards.Where(s => s.Bookings.All(b =>
+                                        startDate >= b.EndDate || endDate <= b.StartDate)).ToList();
+                }
 
-                    //query database and display results in listbox depending on search criteria
-                    if (typeSelected == "All")
-                    {
-                        lbx1.ItemsSource = db.Surfboards.Where
-                        (s => s.Bookings.All(b => b.StartDate >= endDate || b.EndDate <= startDate))
-                        .ToList();
-                    }
-
-                    else
-                    {
-                        lbx1.ItemsSource = db.Surfboards.Where
-                        (s => s.Bookings.All(b => b.StartDate >= endDate || b.EndDate <= startDate) 
-                         && s.Type == typeSelected)
-                        .ToList();
-                    }
+                else
+                {
+                    lbx1.ItemsSource = db.Surfboards.Where(s => s.Type == typeSelected &&
+                                        s.Bookings.All(b =>
+                                        startDate >= b.EndDate || endDate <= b.StartDate)).ToList();
+                }
             }
 
             //control if a value is not entered
@@ -161,14 +158,18 @@ namespace CA3_RentalApp
             //create database reference
             RentalBookingData db = new RentalBookingData();
 
-            //create a boolean which expresses whether there are 
-            //any clashing dates for the selected item
+            //boolean expression evaluates if there are any date clashes
             bool isClashing = db.Surfboards.Where(s => s.Type == typeSelected)
-                              .Any(s => s.Bookings.Any(b => b.StartDate < endDate && b.EndDate > startDate));
+                              .Any(s => s.Bookings.Any(b =>
+                              (startDate >= b.StartDate && endDate <= b.EndDate)
+                           || (startDate < b.StartDate && endDate >= b.StartDate)
+                           || (startDate < b.EndDate && endDate > b.EndDate)
+                           || (startDate < b.StartDate && endDate > b.EndDate)
+                              ));
 
             if (!isClashing)
             { 
-                //create new object // dates, surfboard type, surfboard id
+                //create new booking object
                 Booking b1 = new Booking
                 {
                     StartDate = startDate,
